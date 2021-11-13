@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+#poster-text {
+    animation: fadeIn 3s linear both;
+}
+
+#nurse, #glove {
+    animation: nurseMove 3s ease; 
+}
+
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes nurseMove {
+    0% {
+        transform: translateX(150px);
+    }
+    100%  {
+         transform: translateX(0);
+        }
+}

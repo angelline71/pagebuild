@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Global Citizen</title>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/d54928eb68.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <div id="wrapper">
+        <header>
+            <span class="material-icons" style="color:white;align-self: center;">search</span>
+            <h1 id="logo"><img src="images/logo_sm.svg" alt="Global Citizen"></h1>
+            <nav id="topNavbar" class="topnav">
+                <a href="#">Issues</a>        
+                <a href="#">Take Action</a>
+                <a href="#">Rewards</a>
+                <a href="#">Partners</a>
+                <a href="#">Watch &amp; Listen</a>
+                <a href="#">Events</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("topNavbar");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                </script>
+            </nav>
+        </header>
+        <div id="hero">
+            <div id="hero1">
+                <h2 id="recovery" class="caps">A Recovery Plan for the World</h2>
+                <h5 id="better" class="caps">So we can recover better together.</h5>
+            </div>
+            <div id="hero2">
+                <img src="images/mainImgCollage.svg"  alt="collage image">
+            </div>
+        </div>
+        <div id="join">
+            <h6 class="join caps white">Join Our Campaign</h6>
+            <div class="joinUp signUp">
+                <input type="text" id="joinUp" name="join" placeholder="Email Address" class="emailInputTop"><button class="btn"><i class="fa fa-arrow-right white"></i></button>
+
+            </div>
+        </div>
+        <div id="goals" class="caps">
+            <div><h3 class="noCaps">If we take action together, we can:</h3></div>
+            <div id="learnSection">
+            <div class="learn learn1">
+                <img src="images/endcovid.svg" alt="image of woman with mask" class="goalImg">
+                <div class="learnDet">
+                    <h6>End COVID for All</h6>
+                    <p class="learnMore">Learn More</p>
+                </div>
+            </div>
+            <div class="learn learn2">
+                <img src="images/endhunger.svg" alt="image of crops" class="goalImg">
+                <div class="learnDet">
+                    <h6>End the hunger crisis</h6>
+                    <p class="learnMore">Learn More</p>
+                </div>
+            </div>
+            <div class="learn learn3">
+                <img src="images/student.svg" alt="image of student" class="goalImg">
+                <div class="learnDet">
+                    <h6>Resume learning everywhere</h6>
+                    <p class="learnMore">Learn More</p>
+                </div>
+            </div>
+            <div class="learn learn4">
+                <img src="images/planet.svg" alt="image of earth" class="goalImg">
+                <div class="learnDet">
+                    <h6>protect the planet</h6>
+                    <p class="learnMore">Learn More</p>
+                </div>
+            </div>
+            <div class="learn learn5">
+                <img src="images/equity.svg" alt="image of hands with equal sign" class="goalImg">
+                <div class="learnDet">
+                    <h6>Achieve Equity for All</h6>
+                    <p class="learnMore">Learn More</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="plan">
+                <h4>A recovery plan for everyone, everywhere</h4>
+                <p>If we can get vaccines to everyone who needs them; get children back in classrooms, get food back on the table for everyone; recommit to protecting our planet, and make serious progress on acheiving better equity, we will be in a much stronger place to achieve the Global Goals by 2030. Without it, we will fail.</p>
+                <p>Global Citizen's white paper, "Five Critical Steps to Recover from COVID-19 Better, Together" takes a deep dive into the issues we need to work together to solve.</p>
+                <button class="button" id="hideThis">Download</button>
+            </div>
+            <div id="campaign">
+                <h4>More on our campaign</h4>
+                <p>Join the world's top artists and non-profits to take action throughout the year to get the world to Recover Better Together.</p>
+                <button class="button">Download</button>
+            </div>
+        </div>
+        <div id="endCovid">
+            <div id="nurseAnim">
+                <img src="images/nurse animation/animation.svg" alt="image of Patient and Nurse" id="covid4allAnimated">
+            </div>
+            <div id="endCovidText">
+                <h3>End Covid-19 for All</h3>
+                <h5 class="caps">Ensuring equitable access to COVID-19 test, treatments, and vaccines for everyone, everywhere.</h5>
+                <p>A true recovery from COVID-19 will only happen once everyone, everywhere has access to testing, treatment and vaccines. It is critical that the world’s richest countries ensure the world's poorest has access to these, by supporting COVAX and the Act-A, donating surplus vaccine supply, and supporting vaccine manufacturing efforts. And people everywhere must be confidence in the vaccine and get it as soon as they have access.</p>
+                <button class="button">Learn More</button>
+                <h4>How do we do this?</h4>
+                <ul id="covidList">
+                    <li>Increased funding for Act-A and COVAX to ensure every country can access vaccines.</li>
+                    <li>Wealthy countries need to donate excess doses to poorer countries to tamp down variant strains.</li>
+                    <li>Equitable access to COVID-19 vaccines, treatments and diagnostics is made available to everyone, everywhere.</li>
+                </ul><br><br>
+                <button class="button">Take Action</button>
+            </div>
+        </div>
+        <div id="protectPlanet">
+            <div id="planetAnim">
+                <img src="images/planetAnimated.svg" alt="image of Earth" id="planetAnimated">
+            </div>
+            <div>
+                <h3>Protect the Planet</h3>
+                <h5>Glaciers are melting, water is rising, and the world's poorest people are being impacted the most.</h5>
+                <p>We know that the 20 richest countries are responsible for 80% of carbon emissions. But it is the. most marginalized people around the world that are bearing the brunt of our planet's destruction. We must restart climate action before the consequences are too severe to recover from.</p>
+                <button class="button">Learn More</button>
+                <h4>How do we do this?</h4>
+                <ul id="planetList">
+                    <li>Increased climate financing</li>
+                    <li>Support low-carbon economies</li>
+                    <li>Equitable access to COVID-19 vaccines, treatments and diagnostics is made available to everyone, everywhere.</li>
+                </ul>
+                <button class="button">Take Action</button>
+            </div>
+        </div>
+        <div id="FAQ">
+            <h3>Frequently Asked Questions</h3>
+            <div class="collapse-content">
+              <div class="collapse">
+                <a class="faq" href="#FAQ"><p>What is this campaign about?</p>
+                <div class="faqIcon"><i class="fa fa-plus faqIconPlus"></i></div></a>
+                <div class="content">
+                  <div class="inner-content">
+                      <hr> <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nobis iusto deleniti corporis alias quo a quam similique cupiditate pariatur aliquid, omnis, officia dicta officiis impedit nisi dolores ut, distinctio placeat. Magni dolores perferendis ab laborum in neque, non exercitationem!
+                    
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="collapse">
+                <a class="faq" href="#"><p>What is this campaign about?</p>
+                <div class="faqIcon"><i class="fa fa-plus faqIconPlus"></i></div></a>
+                <div class="content">
+                  <div class="inner-content">
+                      <hr> <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nobis iusto deleniti corporis alias quo a quam similique cupiditate pariatur aliquid, omnis, officia dicta officiis impedit nisi dolores ut, distinctio placeat. Magni dolores perferendis ab laborum in neque, non exercitationem!
+                    </div>
+                </div>
+              </div>
+              <hr>
+              <div class="collapse">
+                  <a class="faq" href="#"><p>What is this campaign about?</p>
+                  <div class="faqIcon"><i class="fa fa-plus faqIconPlus"></i></div></a>
+                <div class="content">
+                  <div class="inner-content">
+                    <hr> <br> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nobis iusto deleniti corporis alias quo a quam similique cupiditate pariatur aliquid, omnis, officia dicta officiis impedit nisi dolores ut, distinctio placeat. Magni dolores perferendis ab laborum in neque, non exercitationem!
+                    </div>
+                </div>
+              </div>
+                <hr>
+              <div class="collapse">
+                <a class="faq" href="#"><p>What is this campaign about?</p>
+                <div class="faqIcon"><i class="fa fa-plus faqIconPlus"></i></div></a>
+                  <div class="content">
+                  <div class="inner-content">
+                      <hr> <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nobis iusto deleniti corporis alias quo a quam similique cupiditate pariatur aliquid, omnis, officia dicta officiis impedit nisi dolores ut, distinctio placeat. Magni dolores perferendis ab laborum in neque, non exercitationem!
+                  </div>
+                </div>
+              </div>
+              <hr>
+            </div>
+        </div>
+        <div id="connect">
+            <div id="newsletter">
+                <h6 class="white caps">Signup for our Newsletter</h6>
+                <div class="signUp">
+                    <input type="text" id="newsSignUp" name="join" placeholder="Email Address" class="emailInputBtm"><button class="btn"><i class="fa fa-arrow-right white"></i></button>
+                </div>
+            </div>
+            <div id="mysocial">
+                <h6 class="white caps">Follow us on Social</h6>
+                <div id="social">
+                    <div class="socialbox"><a href="#" target="_blank"><img src="images/youtube.png" alt="youtube" class="social socialicon"></a></div>
+                    <div class="socialbox"><a href="#" target="_blank"><img src="images/twitter.png" alt="twitter" class="social socialicon"></a></div>
+                    <div class="socialbox"><a href="#" target="_blank"><img src="images/facebook.png" alt="facebook" class="social socialicon"></a></div>
+                    <div class="socialbox"><a href="#" target="_blank"><img src="images/instagram.png" alt="instagram" class="social socialicon"></a></div>
+                    <div class="socialbox"><a href="#" target="_blank"><img src="images/tsocial.png" alt="tumbler" class="social socialicon"></a></div>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <div>
+            <img src="images/logo_sm.svg" alt="Global Citizen logo" width="120px" id="btmlogo">
+            <div class="uparrow"><a href="#top" id="backtotop"><i class="fas fa-arrow-up white arrow"></i></a></div>
+            <p class="copy" >&copy; 2012-2019 Global Poverty Project, Inc. <br>All Rights Reserved</p>
+        </div>
+        <nav id="btmNavbar">
+                <div id="aboutus">
+                    <a href="#" class="btmnavhd">About Us</a>
+                    <ul>
+                        <li><a href="#" class="btmnavlk">Who We Are</a></li>
+                        <li><a href="#" class="btmnavlk">Impact</a></li>
+                        <li><a href="#" class="btmnavlk">Terms of Use</a></li>
+                    </ul>
+                    <br>
+                </div>        
+                <div id="involved">
+                    <a href="#" class="btmnavhd">Get Involved</a>
+                    <ul>
+                        <li><a href="#" class="btmnavlk">Take Action</a></li>
+                        <li><a href="#" class="btmnavlk">Jobs</a></li>
+                    </ul>
+                    <br>
+                </div>
+                <div id="watch">
+                    <a href="#" class="btmnavhd">watch + listen</a>
+                    <ul>
+                        <li><a href="#" class="btmnavlk">ACTIVATE: The Global Citizen Movement</a></li>
+                        <li><a href="#" class="btmnavlk">Videos</a></li>
+                    </ul>
+                    <br>
+                </div>        
+                <div id="global">
+                    <a href="#"  class="btmnavhd">global citizen programs</a>
+                    <ul>
+                        <li><a href="#" class="btmnavlk">Waislitz Global Citizen Awards</a></li>
+                        <li><a href="#" class="btmnavlk">Curtis Scholarship</a></li>
+                        <li><a href="#" class="btmnavlk">Fellowship Program</a></li>
+                    </ul>
+                    <br>
+                </div>
+                <div id="inquiries">
+                    <a href="#" class="btmnavhd">Inquiries</a>
+                    <ul>
+                        <li><a href="#" class="btmnavlk">Contact Us</a></li>
+                        <li><a href="#" class="btmnavlk">FAQs</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </footer>
+    </div>
+    <script type="text/jscript" language="javascript" src="js/main.js"></script>
+</body>
+</html>

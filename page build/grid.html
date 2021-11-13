@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+    <style>
+        #container {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.2fr 1.5fr 1.2fr 0.58fr;
+            grid-template-areas: 
+                "nav nav nav nav" 
+                "sidebar main main main" 
+                "sidebar content1 content2 content3" 
+                "sidebar footer footer footer"; 
+        }
+        
+        navbar {
+            grid-area: nav;
+            background-color: red;
+        }
+        
+        main {
+            grid-area: main;
+            background-color: green;
+        }
+        
+        #sidebar {
+            grid-area: sidebar;
+            background-color: blue;
+        }
+    
+        #content1 {
+            grid-area: content1;
+            background-color: lightblue;
+        }
+        
+        #content2 {
+            grid-area: content2;
+            background-color: mediumaquamarine;
+        }
+        
+        #content3 {
+            grid-area: content3;
+            background-color: cyan;
+        }
+        
+        footer {
+            grid-area: footer;
+            background-color: lavender;
+        }
+        
+        @media only screen and (max-width:550px) {
+            
+            #container {
+            grid-template-columns: 1fr;
+            grid-template-rows:0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 0.4fr 1fr;
+            grid-template-areas: 
+                "nav"
+                "main"
+                "content1"
+                "content2"
+                "content3"
+                "sidebar"
+                "footer";
+            }    }
+    </style>
+</head>
+
+<body>
+<div id="container">
+<footer>
+        <div>
+            <img src="images/logo_sm.svg" alt="Global Citizen logo" width="120px" id="btmlogo">
+            <div class="uparrow"><a href="#top" id="backtotop"><i class="fas fa-arrow-up white arrow"></i></a></div>
+            <p class="copy" >&copy; 2012-2019 Global Poverty Project, Inc. <br>All Rights Reserved</p>
+        </div>
+        <nav id="btmNavbar">
+                <div id="aboutus">
+                    <a href="#" class="btmnavhd">About Us</a>
+                    <ul>
+                        <li><a href="#" class="btmnavlk">Who We Are</a></li>
+                        <li><a href="#" class="btmnavlk">Impact</a></li>
+                        <li><a href="#" class="btmnavlk">Terms of Use</a></li>
+                    </ul>
+                    <br>
+                </div>        
+                <div id="involved">
+                    <a href="#" class="btmnavhd">Get Involved</a>
+                    <ul>
+                        <li><a href="#" class="btmnavlk">Take Action</a></li>
+                        <li><a href="#" class="btmnavlk">Jobs</a></li>
+                    </ul>
+                    <br>
+                </div>
+                <div id="watch">
+                    <a href="#" class="btmnavhd">watch + listen</a>
+                    <ul>
+                        <li><a href="#" class="btmnavlk">ACTIVATE: The Global Citizen Movement</a></li>
+                        <li><a href="#" class="btmnavlk">Videos</a></li>
+                    </ul>
+                    <br>
+                </div>        
+                <div id="global">
+                    <a href="#"  class="btmnavhd">global citizen programs</a>
+                    <ul>
+                        <li><a href="#" class="btmnavlk">Waislitz Global Citizen Awards</a></li>
+                        <li><a href="#" class="btmnavlk">Curtis Scholarship</a></li>
+                        <li><a href="#" class="btmnavlk">Fellowship Program</a></li>
+                    </ul>
+                    <br>
+                </div>
+                <div id="inquiries">
+                    <a href="#" class="btmnavhd">Inquiries</a>
+                    <ul>
+                        <li><a href="#" class="btmnavlk">Contact Us</a></li>
+                        <li><a href="#" class="btmnavlk">FAQs</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </footer>
+</div>
+</body>
+</html>
